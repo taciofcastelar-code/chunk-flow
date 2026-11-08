@@ -38,3 +38,44 @@ footer{color:#8799aa}
 button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #45bfa8;outline-offset:2px}
 @media(max-width:900px){main{padding:0 26px}.sidebar{width:220px}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:680px){.sidebar{width:min(300px,85vw);box-shadow:15px 0 50px #0e213b55}.sidebar.show{display:flex}main{padding:0 16px}header{height:68px;margin-bottom:18px;gap:10px}.eyebrow{letter-spacing:.7px}.pill{font-size:10px;padding:7px 9px;white-space:nowrap}.hero{padding:20px 0 24px}.hero h1{font-size:clamp(30px,8vw,43px);line-height:1.16;letter-spacing:-1.2px}.hero p{font-size:14px}.metrics{gap:10px}.metrics>div{padding:16px}.metrics strong{font-size:28px}.panel{padding:19px;border-radius:17px}.chunk{padding:16px}.chunk-main{gap:12px}.rowbuttons{align-self:stretch;justify-content:flex-end}.pagehead h1{font-size:29px}.question{font-size:23px}.actions .primary,.actions .secondary{flex:1}.toolbar .search{min-width:100%}}
+
+
+/* CHUNK FLOW — Premium minimal design system */
+:root{--ink:#182532;--muted:#758292;--line:#e7e9eb;--paper:#f7f7f5;--surface:#fff;--accent:#137c70;--accent-dark:#0d625a;font-family:'DM Sans',system-ui,sans-serif;color:var(--ink);background:var(--paper)}
+body{background:var(--paper);color:var(--ink);-webkit-font-smoothing:antialiased}
+.shell{background:var(--paper);min-height:100vh}
+.sidebar{background:#17232c;width:248px;padding:34px 19px;border-right:1px solid #25333c;box-shadow:none}
+.brand{margin:0 8px 46px;gap:12px}.brand b{font-size:16px;font-weight:800;letter-spacing:.7px}.brand small{font-size:9px;letter-spacing:1.3px;color:#91a0a9}
+.logo{width:42px;height:42px;border-radius:11px;background:#d9eee8;color:#145e55;box-shadow:none;font-size:16px}
+.nav{gap:5px}.nav button{padding:13px 15px;border-radius:9px;font-size:13px;font-weight:600;color:#aab7c0;gap:13px}
+.nav button.active{background:#293a42;color:#fff;box-shadow:none;border-left:2px solid #8ad0b8}.nav button:hover{background:#26353d}
+.side-note{background:#202e36;border:1px solid #34444b;border-radius:12px;padding:17px}.side-note b{font-size:12px}.side-note p,.side-note span{font-size:11px;color:#9daeb7}
+main{max-width:1160px;padding:0 clamp(24px,4vw,62px)}
+header{height:85px;margin-bottom:26px;border-bottom:1px solid var(--line)}header .eyebrow{color:#697987}
+.eyebrow{font-size:10px;letter-spacing:1.7px;font-weight:800;color:#8b959d}.eyebrow.mint{color:var(--accent)}
+.pill{background:#edf5f1;border:1px solid #dcebe4;color:#377569;font-size:11px;padding:8px 13px}
+.hero{padding:36px 0 32px}.hero h1{font-size:clamp(38px,4.6vw,60px);letter-spacing:-2.6px;line-height:1.11;font-weight:800;color:#15232d;margin:19px 0}.hero em{color:var(--accent)}.hero p,.pagehead p{color:#6f7c87;line-height:1.75;font-size:15px}
+.actions{gap:11px}.primary,.secondary{min-height:46px;border-radius:9px;font-size:13px;font-weight:700;padding:12px 19px;box-shadow:none;letter-spacing:.05px}
+.primary{background:var(--accent);color:white;box-shadow:none}.primary:hover{background:var(--accent-dark);transform:none}
+.secondary{background:#fff;color:#354550;border:1px solid #e0e5e5}.secondary:hover,.secondary.selected{background:#f1f7f4;border-color:#a4cbc0;color:#166c61}
+.metrics{gap:12px;margin:16px 0 28px}.metrics>div{border:1px solid #e9eceb;border-radius:13px;background:#fff;padding:24px;box-shadow:0 3px 18px #152b3505}
+.metrics span{color:#78858e;font-size:12px}.metrics strong{font-size:34px;color:#1b2c36;letter-spacing:-1.2px;font-weight:800}.metrics small{color:#9aa3aa;font-size:11px}
+.panel{background:#fff;border:1px solid #e7ebe9;border-radius:14px;padding:32px;box-shadow:0 5px 22px #1d303909}
+.sectionhead h2,.pagehead h1{color:#1b2a34}.sectionhead h2{font-size:23px;letter-spacing:-.7px}
+.phrase{color:#1a2b35;font-size:clamp(23px,2.8vw,32px);letter-spacing:-.7px;line-height:1.4}.translation,.muted{color:#7b8991}
+.notice{background:#f0f6f2;color:#59746a;border-left:2px solid #82b9a7;border-radius:8px;font-size:12px}
+.pagehead h1{font-size:clamp(30px,3vw,40px);font-weight:800;letter-spacing:-1.4px}
+.toolbar{gap:10px}.search{background:#fff;border:1px solid #e0e6e5;border-radius:9px}.search input{color:#253943}
+.toolbar select,.wide{background:#fff;border:1px solid #e0e6e5;border-radius:9px;color:#293c46}
+.count,.pagination{color:#849099}.chunk{background:#fff;border:1px solid #e8eceb;border-radius:12px;box-shadow:none;padding:20px 23px;transition:border-color .2s,box-shadow .2s}
+.chunk:hover{border-color:#cbded6;box-shadow:0 6px 20px #1a3c3108}.chunk-top{color:#8b999f;font-size:10px}.chunk h3{color:#1c2d37;font-size:17px;letter-spacing:-.15px}.chunk p{color:#7a8891}
+.iconbtn{background:#f6f8f7;border:1px solid #e9eeeb;border-radius:9px;color:#647b7d}.iconbtn:hover,.iconbtn.liked{background:#eaf4ef;color:#167568;border-color:#b5d8c9}
+.builder-card{background:#f5f8f6;border:1px solid #e3eae6;border-radius:12px;padding:44px 24px}.builder-card span{color:#4b8a78}.builder-card h2{color:#20323a;letter-spacing:-.7px}.builder-card p{color:#778a8c}
+.question{color:#1e303b;letter-spacing:-.6px}.choices button{background:#fff;color:#293c47;border:1px solid #e2e9e6;border-radius:10px;padding:18px 20px;transition:border-color .2s,background .2s}
+.choices button:not(:disabled):hover{background:#f3f8f5;border-color:#89c2b0}.choices button.right{background:#e8f5ed;border-color:#87c3a5;color:#175d45}.choices button.wrong{background:#fdf0f0;border-color:#e6a3a3;color:#9b3b3b}
+.feedback{background:#f0f7f3;border-radius:10px}.feedback p{color:#617d70}.history>div{border-bottom:1px solid #e8eceb;color:#697e86}
+.good{color:#1a8a6a}.bad{color:#c05c5c}.check{color:#667985}.empty{color:#8b969c}footer{color:#9ca7a9}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid #58a995;outline-offset:3px}
+@media(max-width:900px){.sidebar{width:214px}main{padding:0 27px}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:680px){.sidebar{width:min(300px,85vw);box-shadow:12px 0 36px #10202840}.sidebar.show{display:flex}main{padding:0 17px}header{height:70px;margin-bottom:16px}.hero{padding:23px 0}.hero h1{font-size:clamp(33px,8.5vw,43px);letter-spacing:-1.5px}.hero p{font-size:14px}.metrics{gap:9px}.metrics>div{padding:17px}.metrics strong{font-size:28px}.panel{padding:20px}.chunk{padding:17px}.chunk-main{align-items:flex-start;flex-direction:column}.rowbuttons{align-self:flex-end}.pagehead h1{font-size:31px}.question{font-size:23px}.toolbar .search{min-width:100%}.actions .primary,.actions .secondary{flex:1}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
