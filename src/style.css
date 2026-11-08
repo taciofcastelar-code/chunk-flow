@@ -79,3 +79,17 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid 
 @media(max-width:900px){.sidebar{width:214px}main{padding:0 27px}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:680px){.sidebar{width:min(300px,85vw);box-shadow:12px 0 36px #10202840}.sidebar.show{display:flex}main{padding:0 17px}header{height:70px;margin-bottom:16px}.hero{padding:23px 0}.hero h1{font-size:clamp(33px,8.5vw,43px);letter-spacing:-1.5px}.hero p{font-size:14px}.metrics{gap:9px}.metrics>div{padding:17px}.metrics strong{font-size:28px}.panel{padding:20px}.chunk{padding:17px}.chunk-main{align-items:flex-start;flex-direction:column}.rowbuttons{align-self:flex-end}.pagehead h1{font-size:31px}.question{font-size:23px}.toolbar .search{min-width:100%}.actions .primary,.actions .secondary{flex:1}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
+
+/* Structured speaking studio */
+.practice-topics,.practice-modes{display:flex;gap:9px;flex-wrap:wrap;margin:14px 0 27px}
+.practice-chip{border:1px solid #dce5e1;background:#fff;color:#51646a;border-radius:100px;padding:10px 15px;font-size:12px;font-weight:700;transition:background .15s,border-color .15s}
+.practice-chip:hover{border-color:#8db9aa;background:#f2f8f5}
+.practice-chip.selected{background:#1c5148;color:#fff;border-color:#1c5148}
+.speaking-card{background:#f8faf8;border:1px solid #e4ebe6;border-radius:14px;padding:28px;margin-top:8px}
+.speaking-card h2{font-size:clamp(19px,2.4vw,26px);line-height:1.35;letter-spacing:-.5px;margin:16px 0 10px;color:#1b3034}
+.speaking-card>p{color:#687d80;line-height:1.6;font-size:16px;margin:0 0 18px}
+.practice-answer{display:block;width:100%;background:#fff;color:#1b3034;border:1px solid #dbe6df;border-radius:10px;padding:14px;font:inherit;resize:vertical;min-height:100px}
+.practice-answer:focus{outline:2px solid #82bba9;outline-offset:2px}
+.practice-example{border-top:1px solid #dde9e1;margin-top:23px;padding-top:20px}
+.practice-example p{font-size:clamp(19px,2.5vw,27px);line-height:1.5;color:#175e51;font-weight:700;letter-spacing:-.3px}
+@media(max-width:680px){.practice-topics,.practice-modes{gap:7px;margin-bottom:23px}.practice-chip{padding:9px 12px;font-size:11px}.speaking-card{padding:18px}.speaking-card>p{font-size:14px}}
